@@ -187,6 +187,13 @@ int main(){
         printf("Error: Invalid expression.");
         return 0;
     }
+    char exp[100];
+    scanf("%[^\n]%*c", exp);
+
+    if(isValid(exp) == 0){
+        printf("Error: Invalid expression.");
+        return 0;
+    }
 
     int ans = Calculate(exp);
 
